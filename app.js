@@ -10,7 +10,7 @@ var download = function (uri, filename, callback) {
     });
 };
 
-download('https://www.google.com/images/srpr/logo3w.png', dir + 'google.png', function () {
+download('https://i.pinimg.com/564x/de/99/36/de9936fc768350dc3f9ec4efb1d027ed.jpg', dir + '3.png', function () {
     console.log('done');
 });
 
