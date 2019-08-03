@@ -16,7 +16,7 @@ fs.readdir(dir, (err, files) => {
         var loadImage;
         Jimp.read(image)
             .then(function (image) {
-                widthImage = image.bitmap.width / 2 -100;
+                widthImage = image.bitmap.width / 2 - 100;
                 heightImage = image.bitmap.height / 2;
 
                 loadImage = image;
