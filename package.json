@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/diazrma/etdev#readme",
   "dependencies": {
-    "jimp": "^0.6.4"
+    "jimp": "^0.6.4",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
