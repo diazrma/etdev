@@ -1,8 +1,10 @@
 const Jimp = require("jimp"),
     fs = require('fs'),
     request = require('request'), 
+    imagefinder = require('imagefinder'),
     dir = './resources/';
-var download = function (uri, filename, callback) {
+
+/*var download = function (uri, filename, callback) {
     request.head(uri, function (err, res, body) {
         console.log('content-type:', res.headers['content-type']);
         console.log('content-length:', res.headers['content-length']);
@@ -10,9 +12,17 @@ var download = function (uri, filename, callback) {
     });
 };
 
-download('https://i.pinimg.com/564x/de/99/36/de9936fc768350dc3f9ec4efb1d027ed.jpg', dir + '3.png', function () {
+download('https://i.pinimg.com/564x/de/99/36/de9936fc768350dc3f9ec4efb1d027ed.jpg', dir + '4.png', function () {
     console.log('done');
 });
+*/
+
+imagefinder({
+    keyword: 'aliens'
+  }).then(images => {
+    console.log(images);
+  })
+
 
 
 var legends = fs.readFileSync('./listPharses.txt').toString().split("\n");
